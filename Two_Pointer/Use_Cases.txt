@@ -1,0 +1,19 @@
+Two pointer approach is a powerful technique used to solve various problems efficiently.
+
+Two pointer approach is used to solve array, linked list and string problems. It involves using two pointers to traverse the data structure, often in opposite directions, to achieve a desired result. Here are some common use cases for the two pointer approach:
+
+1. **Finding pairs with a given sum**: Given a sorted array, you can usetwo pointers to find pairs of numbers that add up to a specific target sum. One pointer starts at the beginning of the array and the other at the end. Depending on whether the sum of the two pointers is less than, greater than, or equal to the target, you can move the pointers accordingly.
+
+2. **Removing duplicates from a sorted array**: You can use two pointers to remove duplicates from a sorted array in-place. One pointer can be used to iterate through the array, while the other pointer keeps track of the position of the last unique element. When a new unique element is found, it can be moved to the position of the last unique element.
+
+3. **Reversing a string**: You can use two pointers to reverse a string in-place. One pointer starts at the beginning of the string and the other at the end. You can swap the characters at these pointers and move them towards each other until they meet.
+
+4. **Merging two sorted arrays**: If you have two sorted arrays, you can use two pointers to merge them into a single sorted array. One pointer can be used for each array, and you can compare the elements at these pointers to determine which one to add to the merged array.
+
+5. **Finding the longest substring without repeating characters**: You can use two pointers to find the longest substring without repeating characters in a given string. One pointer can be used to expand the window of the substring, while the other pointer can be used to shrink it when a duplicate character is found.
+
+6. **Finding the longest palindromic substring**: You can use two pointers to find the longest palindromic substring in a given string. One pointer can be used to expand around the center of the palindrome, while the other pointer can be used to check for matching characters on either side.
+
+7. **Partitioning an array**: You can use two pointers to partition an array based on a pivot value. One pointer can be used to iterate through the array, while the other pointer can be used to keep track of the position where the next smaller element should be placed.
+
+These are just a few examples of how the two pointer approach can be applied to solve various problems efficiently. The key is to identify when the problem can be solved by using two pointers and to understand how to move the pointers based on the conditions of the problem.
