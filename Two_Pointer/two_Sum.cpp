@@ -4,7 +4,6 @@ Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-
 Two sum problem return two numbers == target from an unsorted array
 if array is unsorted than hashmap is the only optimal solution for indices problem but for number problem we can use two pointer approach as optimal solution 
 */
