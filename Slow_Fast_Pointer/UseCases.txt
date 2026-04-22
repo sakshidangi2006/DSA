@@ -1,5 +1,5 @@
 Slow and Fast Pointer is a common technique used in various algorithms, especially those involving linked lists and arrays. Here are some common use cases for the Slow and Fast Pointer technique:
-
+ 
 1. **Finding the Middle of a Linked List**: By using two pointers, where one moves one step at a time (slow) and the other moves two steps at a time (fast), you can find the middle of a linked list. When the fast pointer reaches the end of the list, the slow pointer will be at the middle.
 
 2. **Detecting a Cycle in a Linked List**: The slow and fast pointer technique can be used to determine if a linked list has a cycle. If there is a cycle, the fast pointer will eventually meet the slow pointer. If there is no cycle, the fast pointer will reach the end of the list.
