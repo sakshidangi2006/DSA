@@ -1,0 +1,14 @@
+Sliding Window is a powerful technique used in various applications, such as:
+- Finding the maximum sum of a subarray of a given size
+- Finding the minimum window substring
+- Finding the longest substring without repeating characters
+- Finding the number of substrings with exactly k distinct characters
+- Finding the longest subarray with a sum equal to a given value   
+- Finding the longest subarray with a sum less than or equal to a given value
+- Finding the longest substring with at most k distinct characters
+- Finding the longest substring with at least k distinct characters
+- Finding the longest substring with at least k repeating characters
+- Finding the longest substring with at most k repeating characters
+- Finding the longest substring with exactly k repeating characters
+- Finding the longest substring with at least k distinct characters and   at most m distinct characters
+- Finding the longest substring with at least k repeating characters and at most m repeating characters
