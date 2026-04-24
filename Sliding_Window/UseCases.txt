@@ -10,5 +10,5 @@ Sliding Window is a powerful technique used in various applications, such as:
 - Finding the longest substring with at least k repeating characters
 - Finding the longest substring with at most k repeating characters
 - Finding the longest substring with exactly k repeating characters
-- Finding the longest substring with at least k distinct characters and   at most m distinct characters
+- Finding the longest substring with at least k distinct characters and at most m distinct characters
 - Finding the longest substring with at least k repeating characters and at most m repeating characters
