@@ -1,0 +1,17 @@
+Kadane's Algorithm is a powerful technique used to solve various problems related to finding the maximum sum of contiguous subarrays. Here are some common use cases where Kadane's Algorithm can be applied:
+
+1. **Maximum Subarray Sum**: The most common use case of Kadane's Algorithm is to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers. This is often referred to as the "Maximum Subarray Problem". The algorithm efficiently computes the maximum sum in linear time, O(n).
+
+2. **Maximum Product Subarray**: Similar to the maximum sum problem, Kadane's Algorithm can be adapted to find the maximum product of a contiguous subarray. This is particularly useful when dealing with arrays that contain both positive and negative numbers, as the product can change sign.
+
+3. **Maximum Sum Circular Subarray**: In cases where the array is considered circular (i.e., the end of the array wraps around to the beginning), Kadane's Algorithm can be modified to find the maximum sum of a circular subarray. This involves calculating the maximum sum using Kadane's Algorithm and also considering the total sum of the array minus the minimum subarray sum.
+
+4. **Maximum Sum of k-Concatenated Array**: When an array is concatenated k times, Kadane's Algorithm can be used to find the maximum sum of a contiguous subarray in the resulting array. This is particularly useful in scenarios where the array is repeated multiple times, and we want to find the maximum sum across the concatenated version.
+
+5. **Maximum Sum of Subarray with at Most k Distinct Elements**: Kadane's Algorithm can be modified to find the maximum sum of a contiguous subarray that contains at most k distinct elements. This involves using a sliding window technique along with a hash map to keep track of the count of distinct elements in the current window.
+
+6. **Maximum Sum of Subarray with at Most k Elements**: Similar to the previous use case, Kadane's Algorithm can be adapted to find the maximum sum of a contiguous subarray that contains at most k elements. This can be achieved by maintaining a sliding window of size k and calculating the sum of the elements within that window.
+
+7. **Maximum Sum of Subarray with at Most k Negative Numbers**: Kadane's Algorithm can also be modified to find the maximum sum of a contiguous subarray that contains at most k negative numbers. This involves keeping track of the count of negative numbers in the current window and adjusting the window size accordingly to ensure that it does not exceed k.
+
+Overall, Kadane's Algorithm is a versatile tool that can be applied to a wide range of problems involving contiguous subarrays, making it an essential technique for solving various algorithmic challenges efficiently.    
