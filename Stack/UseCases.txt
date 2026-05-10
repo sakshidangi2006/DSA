@@ -1,0 +1,15 @@
+## Core Operations :-
+Push, Pop, Peek, isEmpty — all O(1)
+
+Classic DSA Problem Patterns:-
+
+Function Call Stack — recursion and call stack management
+Expression Evaluation — infix to postfix, prefix evaluation
+Balanced Parentheses — {[()]} validation
+Monotonic Stack — Next Greater Element, stock span problem
+Undo/Redo — text editors
+String Reversal — reverse a string using stack
+Backtracking — maze solving, DFS traversal
+Browser History — back/forward navigation simulation
+
+
