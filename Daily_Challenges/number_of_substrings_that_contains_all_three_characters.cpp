@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int numberOfSubstrings(string s) {
+
+    vector<int> cnt(3, 0);
+    int left = 0, ans = 0;
+
+    for (int right = 0; right < s.size(); right++) {
+        cnt[s[right] - 'a']++;
+
+        while (cnt[0] > 0 && cnt[1] > 0 && cnt[2] > 0) {
+            ans += s.size() - right;
+            cnt[s[left] - 'a']--;
+            left++;
+        }
+
+    }
+    return ans;
+}
+
+int main() {
+    string s = "abcabc";
+    int ans = numberOfSubstrings(s);
+    cout << ans;
+    return 0;
+}
