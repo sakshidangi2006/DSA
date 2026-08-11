@@ -46,7 +46,6 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     return ans;
 }
 
-
 int main() {
     TreeNode* root = new TreeNode(3);
     root -> left = new TreeNode(20);
@@ -55,10 +54,14 @@ int main() {
     root -> right -> right = new TreeNode(7);
 
     vector<vector<int>> ans = levelOrder(root);
+    cout<<"[";
     for(auto &a : ans) {
+        cout<<"[";
         for(int b : a) {
             cout << b<<" ";
         }
+        cout<<"] ";
     }
+    cout<<"] ";
     return 0;
 }
