@@ -8,24 +8,30 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+bool ans = false;
 
-bool checkPathSum(TreeNode* root, int targetSum) {
-    if (root == nullptr) {
-        return false;
-    }
+void traverse(TreeNode* root, int sum, int targetSum) {
+    if (root == nullptr) return;
+
+    sum += root->val;
 
     if (root->left == nullptr && root->right == nullptr) {
-        return root->val == targetSum;
+        if (sum == targetSum) {
+            ans = true;
+        }
+        return;
     }
 
-    int remaining = targetSum - root->val;
-
-    return checkPathSum(root->left, remaining) ||
-            checkPathSum(root->right, remaining);
+    traverse(root->left, sum, targetSum);
+    traverse(root->right, sum, targetSum);
 }
 
 bool hasPathSum(TreeNode* root, int targetSum) {
-    return checkPathSum(root, targetSum);
+    if (root == nullptr) return false;
+
+    traverse(root, 0, targetSum);
+
+    return ans;
 }
 
 int main() {
