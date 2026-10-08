@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<vector<int>> generate(int numRows) {
+    vector<vector<int>> pascal(numRows);
+
+    for (int i = 0; i < numRows; i++) {
+        pascal[i].resize(i + 1, 1);
+
+        for (int j = 1; j < i; j++) {
+            pascal[i][j] = pascal[i - 1][j - 1] 
+                         + pascal[i - 1][j];
+        }
+    }
+
+    return pascal;
+}
+
+int main() {
+    int numRows = 5;
+    vector<vector<int>>ans = generate(numRows);
+    for(auto& a : ans) {
+        for(int b : a) {
+            cout << b <<" ";
+        }
+        cout <<"\n";
+    }
+    return 0;
+}
